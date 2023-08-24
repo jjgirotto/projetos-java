@@ -6,7 +6,7 @@ public class ContaTerminal {
         //TODO: conhecer e importar a classe scanner
         Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
         
-        //Exibir as mensagens para o usuário
+        //Exibir as mensagens para o usuário e coletar dados
         System.out.println("Digite o número da conta: ");
         int numero = scanner.nextInt();
         System.out.println("Digite o número da agência: ");
@@ -16,8 +16,6 @@ public class ContaTerminal {
         String nome = scanner.nextLine();
         System.out.println("Digite o valor do saldo: ");
         double saldo = scanner.nextDouble();
-
-        //Obter pela classe scanner os valores digitados no terminal
 
         //Exibir a mensagem final
         System.out.println("Olá " + nome + ", obrigado por criar uma conta em nosso banco, sua agência é " + agencia + ", conta " + numero + " e seu saldo R$" + saldo + " já está disponível para saque.");
