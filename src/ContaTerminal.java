@@ -3,7 +3,6 @@ import java.util.Scanner;
 
 public class ContaTerminal {
     public static void main(String[] args) throws Exception {
-        //TODO: conhecer e importar a classe scanner
         Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
         
         //Exibir as mensagens para o usuário e coletar dados
@@ -16,6 +15,7 @@ public class ContaTerminal {
         String nome = scanner.nextLine();
         System.out.println("Digite o valor do saldo: ");
         double saldo = scanner.nextDouble();
+        scanner.close();
 
         //Exibir a mensagem final
         System.out.println("Olá " + nome + ", obrigado por criar uma conta em nosso banco, sua agência é " + agencia + ", conta " + numero + " e seu saldo R$" + saldo + " já está disponível para saque.");
